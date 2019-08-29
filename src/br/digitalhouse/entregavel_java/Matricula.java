@@ -3,8 +3,7 @@ package br.digitalhouse.entregavel_java;
 public class Matricula {
     private Aluno umAluno;
     private Curso umCurso;
-
-    Date umaData = new Date();
+    private Date umaData = new Date();
 
     public Matricula (Aluno novoUmAluno, Curso novoUmCurso, Date novaUmaData){
         umAluno = novoUmAluno;

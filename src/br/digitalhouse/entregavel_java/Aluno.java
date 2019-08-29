@@ -4,12 +4,12 @@ public class Aluno {
 
     private String nome;
     private String sobrenome;
-    private Integer codigo;
+    private Integer codigoAluno;
 
-    public Aluno (String novoNome, String novoSobrenome, Integer novoCodigo){
+    public Aluno (String novoNome, String novoSobrenome, Integer novoCodigoAluno){
         nome = novoNome;
         sobrenome = novoSobrenome;
-        codigo = novoCodigo;
+        codigoAluno = novoCodigoAluno;
     }
 
     public String getNome() {
@@ -28,12 +28,12 @@ public class Aluno {
         this.sobrenome = sobrenome;
     }
 
-    public Integer getCodigo() {
-        return codigo;
+    public Integer getCodigoAluno() {
+        return codigoAluno;
     }
 
-    public void setCodigo(Integer codigo) {
-        this.codigo = codigo;
+    public void setCodigoAluno(Integer codigo) {
+        this.codigoAluno = codigo;
     }
 
 }

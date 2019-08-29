@@ -21,12 +21,15 @@ public class Curso {
         alunosMatriculados = novosAlunosMatriculados;
     }
 
-    public Curso() {
-
+    public Curso (String novoNome, Integer novoCodigoCurso, Integer novaqtdMaxAlunos){
+        nome = novoNome;
+        codigoCurso = novoCodigoCurso;
+        qtdMaxAlunos = novaqtdMaxAlunos;
     }
 
     public boolean adicionarUmAluno(Aluno umAluno){
-        if (alunosMatriculados.add(umAluno)){
+        if (alunosMatriculados.size() < qtdMaxAlunos){
+            alunosMatriculados.add(umAluno);
             return true;
         } else {
             return false;
